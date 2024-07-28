@@ -1,6 +1,7 @@
 import { NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import login from '../../public/login.png'
 
 interface Props {
     floating: boolean
@@ -24,18 +25,15 @@ const Navbar: NextPage<Props> = ({ floating }) => {
                     </Link>
                 </li>
                 <li>
-                    <Link href="/testimony">
-                        Testimony
-                    </Link>
-                </li>
-                <li>
                     <Link href="/members">
                         Members
                     </Link>
                 </li>
             </ul>
             <div className='flex items-center'>
-
+                <Link href="/members">
+                    <Image className='w-5 h-5' src={login} alt="Login" />
+                </Link>
             </div>
         </nav>
     )

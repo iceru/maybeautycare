@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import headerImg from '../public/header.png'
 import bgHeader from '../public/bg-header.png'
 import Footer from "./components/Footer";
+import Gallery from "./components/Gallery";
 
 export default function Home() {
   return (
@@ -34,6 +35,7 @@ export default function Home() {
           Purus ornare accumsan diam morbi magna. Lorem ipsum dolor sit amet consectetur.
         </p>
       </section>
+      <Gallery />
       <section className="container flex justify-between items-center py-20">
         <div></div>
         <div className="text-right">
@@ -42,6 +44,15 @@ export default function Home() {
             See the full list of our <br /> Products Catalogue
           </h3>
           <button className="btn-primary">See More</button>
+        </div>
+      </section>
+
+      <section className="py-20">
+        <h2 className="font-urban font-bold text-3xl text-center mb-6 text-primary">Visit Us</h2>
+        <div>
+          <iframe width="100%" height="600"
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=May%20Beauty%20Care%20Citra%20Raya+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+          </iframe>
         </div>
       </section>
       <Footer />
